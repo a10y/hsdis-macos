@@ -2,6 +2,8 @@
 
 hsdis is a plugin for the HotSpot Oracle JVM that allows you to print out the assembly of JIT'ed calls.
 
+I built the [artifact](https://raw.githubusercontent.com/a10y/hsdis-macos/master/hsdis-amd64.dylib) in this repo using binutils 2.28.
+
 Instructions for installing are below.
 
 ## Installation: JDK 1.8
