@@ -4,17 +4,24 @@ hsdis is a plugin for the HotSpot Oracle JVM that allows you to print out the as
 
 Instructions for installing are below.
 
-## JDK 1.8
+## Installation: JDK 1.8
 
 ```
 cd $JAVA_HOME/jre/lib/server
 wget https://raw.githubusercontent.com/a10y/hsdis-macos/master/hsdis-amd64.dylib
 ```
 
-## JDK 1.9
+## Installation: JDK 1.9
 
 ```
 cd $JAVA_HOME/lib/server
 wget https://raw.githubusercontent.com/a10y/hsdis-macos/master/hsdis-amd64.dylib
 ```
 
+## Usage
+
+Assuming we have classfile `Main.class` present, a simple usage that works on JDK 1.8 and 1.9:
+
+```
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly Main
+```
